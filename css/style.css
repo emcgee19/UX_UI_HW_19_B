@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Shorelines Script Bold';
-    src: url('../fonts/Shorelines\ Script\ Bold.otf') format('otf');
+    src: url(../fonts/Shorelines\ Script\ Bold.otf) format('otf');
     }
 
 /* Navigation bar *
@@ -166,6 +166,7 @@ width: 100%;
 /*TEXT*/
 h1 {
     font-family: 'Shorelines Script Bold', cursive;
+    src: url(../fonts/Shorelines\ Script\ Bold.otf) format('otf');
     font-size: 400%;
     color: #3caea3;
     margin-top: 25px;
