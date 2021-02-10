@@ -415,5 +415,5 @@ p {
 }  
 @font-face {
     font-family: 'Shorelines Script Bold';
-    src: url(../fonts/Shorelines\ Script\ Bold.otf) format('otf');
+    src: url(../fonts/Shorelines\ Script\ Bold.otf) format('opentype');
     }
