@@ -1,0 +1,408 @@
+/* Navigation bar */
+
+/* General */
+.customNav {
+    /*position: fixed;*/
+    width: 100%;
+    background: white;
+    background-color: transparent !important;
+    background-size: cover;
+    z-index: 10;
+    border-bottom: 2px solid #B9B6B6;
+    padding-right: 20px;
+  }
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+  }
+  .navbar-brand img {
+    /*padding-right: 15px;
+    width: 65px;*/
+    height: 110px;
+    margin-left: 30px
+  }
+  .nav-item {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 110%;
+    letter-spacing: 1px;
+  }
+  /* Navigation links */
+  .customNav a {
+    color: black !important;
+  }
+  .customNav a:hover {
+    color: #3caea3 !important;
+  }
+  .navCTA {
+    font-size: 15px;
+  }
+
+/* My code */
+/*TOTAL WIDTH*/
+nav {
+    margin-left: auto;
+}
+
+section,footer {
+    margin-left: 220px;
+    margin-right: 220px;
+}
+#bubbles {
+display: flex;
+width: 100%;
+}
+/*NAVIGATION*/
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item {
+    display: inline-flex;
+    text-align: left;
+    margin-right: 60px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 150%;
+    letter-spacing: 2px;
+}
+#logo {
+    height: 130px;
+    margin-left: 30px
+}
+
+/*hr {
+    height: 2px;
+    background-color: #B9B6B6;
+    border: none;
+}*/
+
+/*WHO SECTION*/
+#flex-container2 {
+    display: flex;
+    padding: 20px 0px;
+    border-bottom: 2px solid #B9B6B6;
+    padding-bottom: 30px;
+    /*margin-top: 150px;*/
+}
+#top-section {
+    display:flex;
+    flex-direction: column;
+    margin-right: 140px;
+}
+#erica {
+    display: flex;
+    margin-right: 50px;
+    border-radius: 20px;
+}
+
+/*GRID SECTION*/
+#grid-container3 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-content: end;
+    /*align-items: start;*/
+    border-bottom: 2px solid #B9B6B6;
+}
+
+.smallgraybox {
+    display: grid;
+    background-color: #C4C4C4;
+    border-radius: 20px;
+    justify-content: center;
+    padding: 35px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    min-height: 250px;
+}
+
+.smallgrayboxtext{
+    display: grid;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.8;
+}
+
+/*WHAT SECITON*/
+.designboxes {
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #B9B6B6;
+    }
+
+.designbackground {
+    background-image: url(../images/make_a_wish_devices.png);
+    background-repeat: no-repeat;
+    background-position-x: -80px;
+    background-position-y: 43px;
+    margin-left: 50px;
+}
+
+.gray-outlinedbox {
+    border: thin solid #B9B6B6;
+    padding: 30px;
+    border-radius: 20px;
+    width: 50%;
+    justify-content: center;
+}
+
+#follow-01 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*TEXT*/
+h1 {
+    font-family: 'Shorelines Script Bold', cursive;  
+    font-size: 400%;
+    color: #3caea3;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    display: flex;
+    font-family: "Roboto", sans-serif;  
+    text-align: flex-start;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+h3 {
+    font-family: 'Shorelines Script Bold', cursive; 
+    color: #B9B6B6;
+    margin-top: 4px;
+}
+
+h4 {
+    font-family: "Roboto", sans-serif; 
+    font-weight: 300;
+    font-size: 200%;
+    line-height: 1.8;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.email {
+    font-family: "Roboto", sans-serif; 
+    font-weight: 300;
+    font-size: 150%;
+    line-height: 1.8;
+}
+
+p {
+    font-family: "Roboto", sans-serif; 
+    line-height: 1.8;
+}
+
+/*MEDIA QUERY SMALL*/
+@media only screen and (max-width: 890px) {
+    nav {
+        display: flex;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    section, footer {
+        margin-left: 0px;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    #logo {
+        display: flex;
+        width: 60%;
+        height: auto;
+        margin-left: 0px;
+        min-width: 125px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        font-family: "Roboto", sans-serif; 
+        font-size: 60%;
+    }
+    .nav-item {
+        display: flex;
+        margin-left: 1px;
+    }
+    #flex-container2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 8%;
+    }
+    #grid-container3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 33% 33% 33%;
+    }
+    .designboxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gray-outlinedbox{
+        align-items: center;
+        width: 100%;
+    }
+    .designbackground{
+        height: 500px;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    #linked-in{
+        display: flex;
+        width: 50px;
+        height: auto;
+    }
+    h1{
+        font-size: 300%;
+    }
+    #erica{
+        display: flex;
+        margin: 0px;
+        width: 90vw;
+        height: auto;
+    }
+    #graybox{
+        display: flex;
+        align-content: center;
+        padding: 0px;
+    }
+    #top-section{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .flex-container {
+        padding: 0px;
+    }
+    .nav {
+        display: flex;
+        height: 50px;
+        width: 100%;
+        position: relative;
+    }
+    .nav > .nav-header {
+        display: inline;
+    }
+    .nav > .nav-header > .nav-title {
+        display: inline-block;
+        font-size: 22px;
+        color: #fff;
+        padding: 10px 10px 10px 10px;
+    }
+    .nav > .nav-btn {
+        display: none;
+    }
+    .nav > .nav-links {
+        display: flex;
+        margin-left: auto;
+        justify-content: flex-end;
+        font-size: 18px;
+    }
+    .nav > .nav-links > a {
+        display: inline-block;
+        padding: 13px 10px 13px 10px;
+        text-decoration: none;
+    }
+    .nav > .nav-links > a:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > #nav-check {
+        display: none;
+    }
+    .smallgraybox {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        min-height: 250px;
+    }
+}
+
+/*MEDIA QUERY LARGE
+@media (max-width: 1050px) {
+    .nav-item{
+        font-size: 90%;
+        font-weight: 700;
+        margin-right: 15px;
+    }
+    section,footer {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+/*MEDIA QUERY MEDIUM*/
+@media (max-width: 1340px) {
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        /*transition: all 0.3s ease-in;*/
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+    .flex-container {
+        padding: 0px;
+    }
+    .nav-item{
+        font-size: 130%;
+        font-weight: 700;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    #logo {
+        height: 110px;
+        margin-left: 30px
+    }
+    section,footer {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    h1{
+        font-size: 300%;
+    }
+}  
